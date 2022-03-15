@@ -1,0 +1,163 @@
+
+/* CLASS SELECTORS */
+
+  .headerContainer {
+    padding-bottom: 12%;
+  }
+
+  .road-img {
+    display: block;
+    margin: auto;
+    width: 90%;
+  }
+
+  /* ROUNDS IMAGES */
+
+  .disabled-link {
+    filter: grayscale(90%);
+    cursor:not-allowed;
+  }
+
+  .round-one {
+    position: absolute;
+    width: 20%;
+
+    bottom: 20%;
+    left: 27%;
+  }
+
+  .round-one:hover {
+    cursor: pointer;
+    width: 25%;
+    
+    bottom: 18%;
+    left: 24.5%;
+  }
+
+  .round-two {
+    position: absolute;
+    width: 10%;
+    
+    left: 15%;
+    top: 92%;
+  }
+
+  .round-two:hover {
+    cursor: pointer;
+    width: 14%;
+
+    left: 14%;
+    top: 89%
+  }
+
+  .round-three {
+    position: absolute;
+    width: 15%;
+
+    top: 115%;
+    left: 36%;
+  }
+
+  .round-three:hover {
+    cursor: pointer;
+    width: 20%;
+
+    top: 112%;
+    left: 33.5%;
+  }
+
+  .round-four {
+    position: absolute;
+    width: 20%;
+
+    top: 105%;
+    left: 65%;
+  }
+
+  .round-four:hover {
+    cursor: pointer;
+    width: 25%;
+
+    top: 100%;
+    left: 63%;
+  }
+
+  .round-five {
+    position: absolute;
+    width: 15%;
+
+    bottom: 25%;
+    left: 73%;
+  }
+
+  .round-five:hover {
+    cursor: pointer;
+    width: 20%;
+    
+    bottom: 23%;
+    left: 70%;
+  }
+
+  .side-logo {
+    left: 2%;
+    top: 4%;
+    position: absolute;
+    width: 20%;
+  }
+  
+  /* Back to Home Button */
+
+.back-btn {
+  background-color: #FF4F61;
+  border-radius: 3px;
+  border: 0.04rem solid #F7C700;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: 'Chau Philomene One', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15385;
+  outline: none;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+
+  left: 85%;
+  top: 5%;
+}
+
+.back-btn:hover {
+  background-color: #5353CD;
+}
+
+.back-btn:active {
+  background-color: #252154;
+  box-shadow: 0.2rem 0.2rem #F7C700;
+}
+
+/* Game Mechanics */
+
+h2, p, ol {
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+h2 {
+  color: #F7C700;
+  text-shadow: 0.1rem 0.1rem rgba(0, 0, 0, 0.714);
+}
+
+ol, p {
+  color: white;
+}
+
+.mechanicsContainer {
+  display: block;
+  margin: 5% 20% 3% 20%;
+}
