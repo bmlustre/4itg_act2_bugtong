@@ -1,100 +1,102 @@
-a {
-  text-decoration: none;
-}
 
-body {
-  background-color: #326244;
-}
-
-/* Animation */
-@keyframes logo-rotate {
-  from {
-    transform: rotate(0deg);
+  a {
+    text-decoration: none;
   }
 
-  to {
-    transform: rotate(360deg);
+      body {
+        background-color: #326244;
+      }
+
+  /* Animation */
+  @keyframes logo-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
   }
-}
 
-/* ClassName Selectors */
+  /* ClassName Selectors */
 
-.banner {
-  position: absolute;
-  transform:rotate(25deg);
-  width: 35%;
+  .banner {
+    position: absolute;
+    transform:rotate(25deg);
+    width: 32.5%;
 
-  top: 8%;
-  left: 64.5%;
-}
+    top: 12%;
+    left: 70.2%;
+  }
 
-.jeep {
-  position: absolute;
-  width: 30%;
-  top: 57%;
-  left: 67%;
-}
+  .jeep {
+    position: absolute;
 
-.logo {
-  cursor: pointer;
-  display:block;
-  margin: 10% auto 6% auto;
-  width: 40%;
-}
+    width: 32%;
+    top: 90%;
+    left: 67%;
+  }
 
-.logo:hover {
-  animation: logo-rotate 4s linear 0s 1 normal;
-}
+  .logo {
+    cursor: pointer;
+    display:block;
+    margin: 10% auto 6% auto;
+    width: 40%;
+  }
 
-.stamp {
-  transform: rotate(45deg);
-  position:absolute;
-  right: 75%;
-  bottom: 60%;
-  width: 40%;
-}
+  .logo:hover {
+    animation: logo-rotate 4s linear 0s 1 normal;
+  }
 
-.tarsier {
-  position: absolute;
-  /*transform:rotate(50deg);*/
-  width: 17%;
+  .stamp {
+    transform: rotate(45deg);
+    position:absolute;
+    right: 70%;
+    bottom: 50%;
+    width: 40%;
+  }
 
-  left: 3%;
-  top: 58%;
-}
+  .tarsier {
+    position: absolute;
+    /*transform:rotate(50deg);*/
+    width: 20%;
 
-/* Play Button */
+    left: 5%;
+    top: 78%;
+  }
 
-.btn {
-  background-color: #FF4F61;
-  border-radius: 3px;
-  border: 0.04rem solid #F7C700;
-  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  display: block;
-  font-family: 'Chau Philomene One', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.15385;
-  margin: 0 auto;
-  outline: none;
-  padding: 0.3rem 0.5rem;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-}
+  /* Play Button */
 
-.btn:hover {
-  background-color: #5353CD;
-}
+  .btn {
+    background-color: #FF4F61;
+    border-radius: 3px;
+    border: 0.04rem solid #F7C700;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0 auto;
+    outline: none;
+    padding: 0.3rem 0.5rem;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+  }
 
-.btn:active {
-  background-color: #252154;
-  box-shadow: 0.2rem 0.2rem #F7C700;
-}
+  .btn:hover {
+    background-color: #5353CD;
+  }
+
+  .btn:active {
+    background-color: #252154;
+    box-shadow: 0.2rem 0.2rem #F7C700;
+  }

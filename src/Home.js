@@ -12,15 +12,17 @@ const Home = () => {
 
   return (
     <>
-
-    <div className="homeContainer">
-        <img src={stamp} alt='stamp-img' className="stamp" />
-        <img src={tarsier} alt='tarsier-img' className="tarsier" />
-        <img src={banner} alt='banner-img' className="banner" />
-        <img src={logo} alt='logo-img' className="logo" />
-        <button className="btn" onClick={() => navigate("/Start")}>Click To Play</button>
-        <img src={jeep} alt='jeep-img' className="jeep" />
-    </div>
+    
+      <div className="row container-fluid">
+        <div className="col-lg">
+          <img src={stamp} alt='stamp-img' className="stamp" />
+          <img src={tarsier} alt='tarsier-img' className="tarsier" />
+          <img src={banner} alt='banner-img' className="banner" />
+          <img src={logo} alt='logo-img' className="logo" />
+          <button className="btn" onClick={() => navigate("/Start")}>Click To Play</button>
+          <img src={jeep} alt='jeep-img' className="jeep" />
+        </div>
+      </div>
 
   </>
   );
