@@ -2,10 +2,12 @@ import React, {Component} from "react";
 import './css/LevelStart.css';
 import isEmpty from "./utils/is-empty";
 import logo from './imgfiles/logo.png';
+import fail from './imgfiles/fail.png';
+import success from './imgfiles/success.png';
 import { useNavigate } from "react-router-dom";
 import questions from "./questions.json";
-import PopUp from "./PopUp"
-
+import { Modal, Button } from "react-bootstrap";
+import modalStyle from "./utils/modal-style";
 class LevelStart extends Component {
   // const navigate = useNavigate();
 
@@ -21,7 +23,9 @@ class LevelStart extends Component {
     score: 0,
     correctAnswer : 0,
     wrongAnswer : 0,
-    time: {}
+    time: {},
+    isOpen : false,
+    popUpBg : ""
   };
 
   displayQuestion = (questions = this.state.questions, currentQuestion, nextQuestion, previousQuestion) => {
@@ -41,16 +45,21 @@ class LevelStart extends Component {
             answer
           });          
         } else {
-          console.log("done sjie");
-
+          let passing = Math.ceil((questions.length / 2));
+          let bg = fail;
+            if(this.state.correctAnswer > passing )
+              bg = success;
+          this.setState({ isOpen: true , popUpBg : bg });
         }
 
       }
   };
 
   componentDidMount() {
-    const {questions, currentQuestion, nextQuestion, previousQuestion} = this.state
-    this.displayQuestion(questions, currentQuestion, nextQuestion, previousQuestion)
+    const {questions, currentQuestion, nextQuestion, previousQuestion} = this.state;
+    this.displayQuestion(questions, currentQuestion, nextQuestion, previousQuestion);
+
+
   }
 
   handleOptionClick = (event) => {
@@ -70,6 +79,7 @@ class LevelStart extends Component {
       numberofAnsweredQuestions : prevState.numberofAnsweredQuestions +1
     }), () => {
       this.displayQuestion ( this.state.questions, this.state.currentQuestion, this.state.nextQuestion, this.state.previousQuestion);
+      
     });
   }
 
@@ -85,33 +95,22 @@ class LevelStart extends Component {
     });
   }
 
-   //[showModal,setShowModal] = useState(false);
-  
-  //  displayConfimationModal = (event) => {
-  //    setShowModal(true);
-  // }
-  
-  //  handleConfirmation = (event) => {
-  //   console.log("confirmed");
-  //   await saveProductData();
-  //   setShowModal(false);
-  // }
-  
-  //  handleDecline = (event) =>{
-  //   console.log("declined");
-  //   setShowModal(false);
-  // }
-
-  //  saveProductData = async () => {
-  //   await axios.post("url", content);
-  // }
-
+  closeModal = () => this.setState({ isOpen: false });
   render() {
-    const {currentQuestion, numberofQuestions, currentQuestionIndex} = this.state;
+    const {currentQuestion, numberofQuestions, currentQuestionIndex, isOpen, popUpBg } = this.state;
     
     return (
       <div className="container p-5 text-center" id="levelStart">
-             {/* {true ? ( < PopUp/>) : null} */}
+        <Modal show={isOpen} onClick={this.closeModal} style={modalStyle.modal}>
+            <Modal.Body>{  
+                      <img src={popUpBg} alt='logo-img' className='mb-2 img-fluid'/>
+              } 
+            
+            </Modal.Body>
+            <Modal.Footer>
+              <Button variant="secondary">Restart Game</Button>
+            </Modal.Footer>
+        </Modal>
 
         <button className="back-btn btn-lg" onClick={() => {  }}> Back To Start </button>
         <img src={logo} alt='logo-img' className='mb-2' id="logo_game" />
