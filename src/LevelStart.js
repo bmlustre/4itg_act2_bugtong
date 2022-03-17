@@ -4,12 +4,11 @@ import isEmpty from "./utils/is-empty";
 import logo from './imgfiles/logo.png';
 import fail from './imgfiles/fail.png';
 import success from './imgfiles/success.png';
-import { useNavigate } from "react-router-dom";
+import questionBG from './imgfiles/questionBG.png';
 import questions from "./questions.json";
 import { Modal, Button } from "react-bootstrap";
 import modalStyle from "./utils/modal-style";
 class LevelStart extends Component {
-  // const navigate = useNavigate();
 
   state = {
     questions,
@@ -108,18 +107,18 @@ class LevelStart extends Component {
             
             </Modal.Body>
             <Modal.Footer>
-              <Button variant="secondary">Restart Game</Button>
+              <Button variant="secondary"onClick={() => {window.location.href="/Start"}}>Restart Game</Button>
             </Modal.Footer>
         </Modal>
+        <button className="back-btn btn-lg" onClick={() => {window.location.href="/Home"}}> Back To Start </button>
 
-        <button className="back-btn btn-lg" onClick={() => {  }}> Back To Start </button>
         <img src={logo} alt='logo-img' className='mb-2' id="logo_game" />
+        
         <h2 id="level-num"> LEVEL 1 </h2>
        
-        <div id="content_bg" > </div>
         <div className=" " id="content_question">
           <div className="col-lg-12 ">
-            <p className=" h1 ml-0 mr-0 text_qst" > { currentQuestion.question}</p>
+            <p className=" h1 ml-0 mr-0 text_qst" > {currentQuestion.question}</p>
           </div>
           <div className="col-lg-12" id="btn_top">
             <hr className="w-50"></hr>
@@ -136,8 +135,10 @@ class LevelStart extends Component {
                 <button  onClick={this.handleOptionClick} type="button" className="ml-5 btn btn-primary btn-question">{ currentQuestion.option4}</button>
               </div>
           </div>
+          <img src={questionBG} alt='question-bg' className="question-bg" />
         </div>
       </div>
+      
     );  
   }
 

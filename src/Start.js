@@ -24,7 +24,7 @@ const Start = () => {
         </div>
 
         <div className="col-lg-6">
-          <button className="back-btn btn-lg" onClick={() => navigate(-1)}> Back To Start </button>
+          <button className="back-btn btn-lg" onClick={() => {window.location.href="/Home"}}> Back To Start </button>
         </div>
       </div>     
 

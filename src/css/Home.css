@@ -41,7 +41,7 @@
     cursor: pointer;
     display:block;
     margin: 10% auto 6% auto;
-    width: 40%;
+    width: 35%;
   }
 
   .logo:hover {
@@ -94,9 +94,11 @@
 
   .btn:hover {
     background-color: #5353CD;
+    color: white;
   }
 
   .btn:active {
     background-color: #252154;
     box-shadow: 0.2rem 0.2rem #F7C700;
+    color: white;
   }

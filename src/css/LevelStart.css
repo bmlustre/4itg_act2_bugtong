@@ -8,7 +8,7 @@
     width: 15%;
 }
 
-#content_bg {
+/*#content_bg {
     background-image: url("../imgfiles/questionBG.png");
     background-repeat: no-repeat;  
     background-size: 100% 100%;
@@ -19,11 +19,24 @@
     left: 33%;
     margin-top: -100px;
     margin-left: -100px;
-}
+}*/
+
 #content_question {
-    margin-top: 110px;
-    margin-left: 245px;
-    width:600px;
+    margin-top: 8%;
+    margin-left: 25%;
+    padding-top: 7.5%;
+    
+    width:50%;
+}
+
+.question-bg {
+    padding-top: 5%;
+    position: absolute;
+    width: 60%;
+    z-index: -1;
+
+    top: 20%;
+    right: 20%;
 }
 
 .text_qst{

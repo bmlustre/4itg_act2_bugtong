@@ -14,7 +14,7 @@ const Home = () => {
     <>
     
       <div className="row container-fluid">
-        <div className="col-lg">
+        <div className="col-lg-12">
           <img src={stamp} alt='stamp-img' className="stamp" />
           <img src={tarsier} alt='tarsier-img' className="tarsier" />
           <img src={banner} alt='banner-img' className="banner" />
