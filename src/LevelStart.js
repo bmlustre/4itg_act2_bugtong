@@ -116,20 +116,21 @@ class LevelStart extends Component {
         
         <h2 id="level-num"> LEVEL 1 </h2>
        
-        <div className=" " id="content_question">
+        <div className="row" id="content_question">
           <div className="col-lg-12 ">
             <p className=" h1 ml-0 mr-0 text_qst" > {currentQuestion.question}</p>
+            <hr className="w-50"></hr>
+          < p className="text-warning ml-0 mr-0 " > QUESTION {(currentQuestionIndex + 1)} OF {numberofQuestions} </p>
+
           </div>
           <div className="col-lg-12" id="btn_top">
-            <hr className="w-50"></hr>
-          <p className="text-warning ml-0 mr-0 " > QUESTION {(currentQuestionIndex + 1)} OF {numberofQuestions} </p>
-
+          
             <div className="btn-group">
               <button onClick={this.handleOptionClick} type="button" className="btn btn-primary btn-question">{ currentQuestion.option1 }</button>
               <button  onClick={this.handleOptionClick} type="button" className="ml-5 btn btn-primary btn-question">{ currentQuestion.option2}</button>
             </div>
           </div>
-          <div className="col-lg-12 mt-3">
+          <div className="col-lg-12 mt-3 footer">
             <div className="btn-group">
                 <button  onClick={this.handleOptionClick} type="button" className="btn btn-primary btn-question">{ currentQuestion.option3}</button>
                 <button  onClick={this.handleOptionClick} type="button" className="ml-5 btn btn-primary btn-question">{ currentQuestion.option4}</button>
