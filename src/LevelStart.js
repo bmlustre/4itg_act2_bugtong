@@ -3,6 +3,8 @@ import './css/LevelStart.css';
 import isEmpty from "./utils/is-empty";
 import logo from './imgfiles/logo.png';
 import fail from './imgfiles/fail.png';
+import star from './imgfiles/star.png';
+import sun from './imgfiles/sun.png';
 import success from './imgfiles/success.png';
 import questionBG from './imgfiles/questionBG.png';
 import questions from "./questions.json";
@@ -99,7 +101,7 @@ class LevelStart extends Component {
     const {currentQuestion, numberofQuestions, currentQuestionIndex, isOpen, popUpBg } = this.state;
     
     return (
-      <div className="container p-5 text-center" id="levelStart">
+      <div className="container-fluid p-5 text-center" id="levelStart">
         <Modal show={isOpen} onClick={this.closeModal} style={modalStyle.modal}>
             <Modal.Body>{  
                       <img src={popUpBg} alt='logo-img' className='mb-2 img-fluid'/>
@@ -110,11 +112,17 @@ class LevelStart extends Component {
               <Button variant="secondary"onClick={() => {window.location.href="/Start"}}>Restart Game</Button>
             </Modal.Footer>
         </Modal>
-        <button className="back-btn btn-lg" onClick={() => {window.location.href="/Home"}}> Back To Start </button>
+
+        <img src={sun} alt='logo-img' id="sun-img" />
+
+        <h1 className="back-link" onClick={() => {window.location.href="/Start"}}> BACK </h1>
 
         <img src={logo} alt='logo-img' className='mb-2' id="logo_game" />
         
         <h2 id="level-num"> LEVEL 1 </h2>
+
+        <img src={star} alt='star-img' className="star-three" />
+        <img src={star} alt='star-img' className="star-four" />
        
         <div className="row" id="content_question">
           <div className="col-lg-12 ">

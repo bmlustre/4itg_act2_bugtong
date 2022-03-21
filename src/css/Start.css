@@ -1,24 +1,26 @@
-
 /* CLASS SELECTORS */
 
   .road-img {
     display: block;
-    margin: 8% auto;
-    width: 90%;
+    margin: 0 auto;
+    width: 50%;
   }
 
   /* CONTAINERS */
 
   .headerContainer {
-    margin: 5% 0 0;
+    margin: 2% 0 0;
   }
 
   .levelsContainer {
     padding-top: 9%;
   }
 
-  .mechanicsContainer {
-    margin: 0 20% 5%;
+  .startContainer {
+    background-image: url("../imgfiles/start-bg.png");
+    background-repeat: no-repeat;
+    background-position: 4%;
+    background-size: 100%;
   }
 
   /* ROUNDS IMAGES */
@@ -30,125 +32,114 @@
 
   .round-one {
     position:absolute;
-    width: 20%;
+    width: 10%;
 
-    bottom: 60%;
-    left: 27%;
+    bottom: 63%;
+    left: 38%;
   }
 
   .round-one:hover {
     cursor: pointer;
-    width: 25%;
+    width: 15%;
     
-    bottom: 56%;
-    left: 24.5%;
+    bottom: 58%;
+    left: 35%;
   }
 
   .round-two {
     position: absolute;
-    width: 10%;
+    width: 6%;
     
-    left: 17%;
+    left: 32%;
     top: 50%;
   }
 
   .round-two:hover {
     cursor: pointer;
-    width: 14%;
+    width: 8%;
 
-    left: 16%;
+    left: 31%;
     top: 48%
   }
 
   .round-three {
     position: absolute;
-    width: 15%;
+    width: 10%;
 
-    top: 65%;
-    left: 36%;
+    top: 67%;
+    left: 41.5%;
   }
 
   .round-three:hover {
     cursor: pointer;
-    width: 20%;
+    width: 12%;
 
-    top: 62%;
-    left: 34.2%;
+    top: 64%;
+    left: 40.7%;
   }
 
   .round-four {
     position: absolute;
-    width: 20%;
+    width: 13%;
 
-    top: 60%;
-    left: 65%;
+    top: 56%;
+    left: 58%;
   }
 
   .round-four:hover {
     cursor: pointer;
-    width: 25%;
+    width: 15%;
 
     top: 54%;
-    left: 62%;
+    left: 56.5%;
   }
 
   .round-five {
     position: absolute;
-    width: 14%;
+    width: 8%;
 
-    bottom: 65%;
-    left: 72%;
+    bottom: 63%;
+    left: 62.5%;
   }
 
   .round-five:hover {
     cursor: pointer;
-    width: 20%;
+    width: 12%;
     
     bottom: 61%;
-    left: 69.7%;
+    left: 60.4%;
   }
 
   .side-logo {
     left: 5%;
     position: absolute;
-    width: 40%;
+    width: 30%;
   }
+
+  /* BACK TO START */
   
-  /* Back to Home Button */
+  .back-link {
+    color: white;
+    cursor: pointer;
+    font-family: 'Chau Philomene One', sans-serif;
+    font-size: 35px;
+    text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.374);
 
-.back-btn {
-  background-color: #FF4F61;
-  border-radius: 3px;
-  border: 0.04rem solid #F7C700;
-  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: white;
-  cursor: pointer;
-  font-family: 'Chau Philomene One', sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 1.15385;
-  outline: none;
-  padding: 0.3rem 0.5rem;
-  position: absolute;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
+    position: absolute;
+    top: 4%;
+    left: 83%;
+  }
 
-  left: 70%;
-}
+  .back-link:hover {
+    color: #F7C700;
+    cursor: pointer;
+    font-size: 40px;
+  }
 
-.back-btn:hover {
-  background-color: #5353CD;
-}
-
-.back-btn:active {
-  background-color: #252154;
-  box-shadow: 0.2rem 0.2rem #F7C700;
-}
+  .back-link:active {
+    color: white;
+    cursor: pointer;
+  }
 
 /* Game Mechanics */
 

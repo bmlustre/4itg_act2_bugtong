@@ -2,7 +2,6 @@ import React from "react";
 import logo from './imgfiles/logo.png';
 import './css/Start.css';
 import { useNavigate } from "react-router-dom";
-import { ThemeProvider } from "react-bootstrap";
 
 import road from './imgfiles/road.png';
 import roundOne from './imgfiles/levels/roundOne.png';
@@ -16,7 +15,7 @@ const Start = () => {
   return (
     <>    
 
-    <div className="container-fluid">
+    <div className="container-fluid startContainer">
 
       <div className="headerContainer row">
         <div className="col-lg-6">
@@ -24,7 +23,7 @@ const Start = () => {
         </div>
 
         <div className="col-lg-6">
-          <button className="back-btn btn-lg" onClick={() => {window.location.href="/Home"}}> Back To Start </button>
+          <h1 className="back-link" onClick={() => {window.location.href="/Home"}}> HOME </h1>
         </div>
       </div>     
 
@@ -32,29 +31,13 @@ const Start = () => {
         <div className="col-lg">
           <img src={road} alt='road-img' className='road-img' />
 
-          <img src={roundOne} alt='roundOne-img' className='round-one' onClick={() => navigate("/LevelStart")} />
-          <img src={roundTwo} alt='roundTwo-img' className='round-two disabled-link' onClick={() => navigate("/LevelStart")} />
-          <img src={roundThree} alt='roundThree-img' className='round-three disabled-link' onClick={() => navigate("/LevelStart")} />
-          <img src={roundFour} alt='roundFour-img' className='round-four disabled-link' onClick={() => navigate("/LevelStart")} />
-          <img src={roundFive} alt='roundFive-img' className='round-five disabled-link' onClick={() => navigate("/LevelStart")} />
+          <img src={roundOne} alt='roundOne-img' className='round-one' onClick={() => {window.location.href="/LevelStart"}} />
+          <img src={roundTwo} alt='roundTwo-img' className='round-two disabled-link' onClick={() => {window.location.href="/LevelStart"}} />
+          <img src={roundThree} alt='roundThree-img' className='round-three disabled-link' onClick={() => {window.location.href="/LevelStart"}} />
+          <img src={roundFour} alt='roundFour-img' className='round-four disabled-link' onClick={() => {window.location.href="/LevelStart"}} />
+          <img src={roundFive} alt='roundFive-img' className='round-five disabled-link' onClick={() => {window.location.href="/LevelStart"}} />
         </div>
       </div>
-
-      <div className="mechanicsContainer row">
-        <div className="col-lg">
-          <h2> Game Mechanics: </h2>
-            <p> There are five rounds in total. Each round, you will be given 5 riddles to answer, before you can unlock your next destination. </p>
-            <ol>
-              <li> The first round is a sari-sari store. </li>
-              <li> The second round will initiate at the sorbetes stand. </li>
-              <li> The third round will start at the fishball stand. </li>
-              <li> The fourth round will begin at the buko juice stand. </li>
-              <li> Your last destination will be a yakult stand. </li>
-            </ol>
-            <p> Enjoy the game! </p>
-        </div>
-      </div>
-
     </div> 
 
     </>
