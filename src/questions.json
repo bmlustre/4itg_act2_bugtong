@@ -1,121 +1,155 @@
-[
-    {
-        "question": "Bata pa si Nene marunong nang manahi.",
-        "option1" : "Gagamba",
-        "option2" : "Makina",
-        "option3" : "Kidlat",
-        "option4": "Lastikman",
-        "answer": "Gagamba"
-    },
-    {
-        "question": "Nang kainin ay patay, nang iluwa’y buhay.",
-        "option1" : "Bulate",
-        "option2" : "Ibon",
-        "option3" : "Bibe",
-        "option4": "Kandila",
-        "answer": "Bulate "
-    },
-    {
-        "question": "Alin sa mga ibon ang di nakadadapo sa kahoy?",
-        "option1" : "Lobo",
-        "option2" : "Bulate",
-        "option3" : "Tulya",
-        "option4": "Pugo",
-        "answer": "Pugo"
-    },
-    {
-        "question": "Mataas kung nakaupo, mababa kung nakatayo.",
-        "option1" : "Aso",
-        "option2" : "Pusa",
-        "option3" : "Ibon",
-        "option4": "Pagong",
-        "answer": "Aso"
-    },
-    {
-        "question": "Bagama’t maliit, marunong nang umawit.",
-        "option1" : "Orasan",
-        "option2" : "Palaka",
-        "option3" : "Kuliglig",
-        "option4": "Ibon",
-        "answer": "Kuliglig"
-    },
-    {
-        "question": "Limang magkakapatid, iisa and dibdib.",
-        "option1" : "Posporo",
-        "option2" : "Paa",
-        "option3" : "Kamay",
-        "option4": "Ngipin",
-        "answer": "Kamay"
-    },
-    {
-        "question": "Aling bahagi ng katawan ang di naaabot ng kanang kamay?",
-        "option1" : "Likod",
-        "option2" : "Pwet",
-        "option3" : "Kanang Siko",
-        "option4": "Balikat",
-        "answer": "Kanang Siko"
-    },    {
-        "question": "Dahon ng pindapinda magsinlapad ang dalawa.",
-        "option1" : "Mata",
-        "option2" : "Tenga",
-        "option3" : "Paa",
-        "option4": "Kamay",
-        "answer": "Tenga"
-    },
-    {
-        "question": "Isang bakud-bakuran sari-sari ang nagdaan.",
-        "option1" : "Palengke",
-        "option2" : "Pensa",
-        "option3" : "Daan",
-        "option4": "Ngipin",
-        "answer": "Ngipin"
-    },
-    {
-        "question": "Isang bundok hindi makita ang tuktok.",
-        "option1" : "Pwet",
-        "option2" : "Likod",
-        "option3" : "Noo",
-        "option4": "Tuhod",
-        "answer": "Noo"
-    },
-    {
-        "question": "Nang munti pa ay paruparo, nang lumaki ay latigo.",
-        "option1" : "Patola",
-        "option2" : "Sitaw",
-        "option3" : "Patatas",
-        "option4": "Sayote",
-        "answer": "Sitaw"
-    },
-    {
-        "question": "Nang sumipot sa maliwanag, kulubot na ang balat.",
-        "option1" : "Okra",
-        "option2" : "Labanos",
-        "option3" : "Pechay",
-        "option4": "Ampalaya",
-        "answer": "Ampalaya"
-    },
-    {
-        "question": "Puno ko sa probinsya, puno’t dulo ay mga bunga.",
-        "option1" : "Kamyas",
-        "option2" : "Chiko",
-        "option3" : "Makopa",
-        "option4": "Papaya",
-        "answer": "Kamyas"
-    },
-    {
-        "question": "Isda ko sa Maribeles, Nasa loob ang kaliskis.",
-        "option1" : "Liwayway",
-        "option2" : "Gunting",
-        "option3" : "Isda",
-        "option4": "Sili",
-        "answer": "Sili"
-    },
-    {
-        "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
-        "option1" : "Labanos",
-        "option2" : "Talong",
-        "option3" : "Ampalaya",
-        "option4": "Ube",
-        "answer": "Talong"
-    }
+[ 
+    [
+
+        {
+            "question": "Bata pa si Nene marunong nang manahi.",
+            "option1" : "Gagamba",
+            "option2" : "Makina",
+            "option3" : "Kidlat",
+            "option4": "Lastikman",
+            "answer": "Gagamba"
+        },
+        {
+            "question": "Nang kainin ay patay, nang iluwa’y buhay.",
+            "option1" : "Bulate",
+            "option2" : "Ibon",
+            "option3" : "Bibe",
+            "option4": "Kandila",
+            "answer": "Bulate "
+        },
+        {
+            "question": "Alin sa mga ibon ang di nakadadapo sa kahoy?",
+            "option1" : "Lobo",
+            "option2" : "Bulate",
+            "option3" : "Tulya",
+            "option4": "Pugo",
+            "answer": "Pugo"
+        },
+        {
+            "question": "Mataas kung nakaupo, mababa kung nakatayo.",
+            "option1" : "Aso",
+            "option2" : "Pusa",
+            "option3" : "Ibon",
+            "option4": "Pagong",
+            "answer": "Aso"
+        },
+        {
+            "question": "Bagama’t maliit, marunong nang umawit.",
+            "option1" : "Orasan",
+            "option2" : "Palaka",
+            "option3" : "Kuliglig",
+            "option4": "Ibon",
+            "answer": "Kuliglig"
+        },
+        {
+            "question": "Limang magkakapatid, iisa and dibdib.",
+            "option1" : "Posporo",
+            "option2" : "Paa",
+            "option3" : "Kamay",
+            "option4": "Ngipin",
+            "answer": "Kamay"
+        },
+        {
+            "question": "Aling bahagi ng katawan ang di naaabot ng kanang kamay?",
+            "option1" : "Likod",
+            "option2" : "Pwet",
+            "option3" : "Kanang Siko",
+            "option4": "Balikat",
+            "answer": "Kanang Siko"
+        },    {
+            "question": "Dahon ng pindapinda magsinlapad ang dalawa.",
+            "option1" : "Mata",
+            "option2" : "Tenga",
+            "option3" : "Paa",
+            "option4": "Kamay",
+            "answer": "Tenga"
+        },
+        {
+            "question": "Isang bakud-bakuran sari-sari ang nagdaan.",
+            "option1" : "Palengke",
+            "option2" : "Pensa",
+            "option3" : "Daan",
+            "option4": "Ngipin",
+            "answer": "Ngipin"
+        },
+        {
+            "question": "Isang bundok hindi makita ang tuktok.",
+            "option1" : "Pwet",
+            "option2" : "Likod",
+            "option3" : "Noo",
+            "option4": "Tuhod",
+            "answer": "Noo"
+        },
+        {
+            "question": "Nang munti pa ay paruparo, nang lumaki ay latigo.",
+            "option1" : "Patola",
+            "option2" : "Sitaw",
+            "option3" : "Patatas",
+            "option4": "Sayote",
+            "answer": "Sitaw"
+        },
+        {
+            "question": "Nang sumipot sa maliwanag, kulubot na ang balat.",
+            "option1" : "Okra",
+            "option2" : "Labanos",
+            "option3" : "Pechay",
+            "option4": "Ampalaya",
+            "answer": "Ampalaya"
+        },
+        {
+            "question": "Puno ko sa probinsya, puno’t dulo ay mga bunga.",
+            "option1" : "Kamyas",
+            "option2" : "Chiko",
+            "option3" : "Makopa",
+            "option4": "Papaya",
+            "answer": "Kamyas"
+        },
+        {
+            "question": "Isda ko sa Maribeles, Nasa loob ang kaliskis.",
+            "option1" : "Liwayway",
+            "option2" : "Gunting",
+            "option3" : "Isda",
+            "option4": "Sili",
+            "answer": "Sili"
+        },
+        {
+            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
+            "option1" : "Labanos",
+            "option2" : "Talong",
+            "option3" : "Ampalaya",
+            "option4": "Ube",
+            "answer": "Talong"
+        }
+    ],
+    [
+        {
+            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
+            "option1" : "Labanos",
+            "option2" : "Talong",
+            "option3" : "Ampalaya",
+            "option4": "Ube",
+            "answer": "Talong"
+        }
+    ],
+    [
+        {
+            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
+            "option1" : "Labanos",
+            "option2" : "Talong",
+            "option3" : "Ampalaya",
+            "option4": "Ube",
+            "answer": "Talong"
+        }
+    ],
+    [
+        {
+            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
+            "option1" : "Labanos",
+            "option2" : "Talong",
+            "option3" : "Ampalaya",
+            "option4": "Ube",
+            "answer": "Talong"
+        }
+    ]
+   
 ]

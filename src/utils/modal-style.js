@@ -1,7 +1,7 @@
 
 export default {
     modal: {
-      top: '35%',
+      top: '30%',
       left: '45%',
       right: 'auto',
       bottom: 'auto',

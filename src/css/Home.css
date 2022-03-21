@@ -54,15 +54,14 @@
 
     position: absolute;
     bottom: 5%;
-    left: 44%;
+    left: 42%;
   }
 
   .play-link:hover {
     color: #F7C700;
     cursor: pointer;
     font-size: 35px;
-
-    left: 43%;
+    left: 42%;
   }
 
   .play-link:active {

@@ -1,0 +1,10 @@
+.btn-modal {
+    background-image: url("../imgfiles/btn_question.png");
+    background-size: 100% 100%;
+    background-color:transparent;
+    border-radius: 0;
+    border: 0.04rem solid transparent;
+    width: 220px;
+    height: 55px;
+    align: center;
+}

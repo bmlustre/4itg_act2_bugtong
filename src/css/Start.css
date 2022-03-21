@@ -125,9 +125,8 @@
     font-size: 35px;
     text-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.374);
 
-    position: absolute;
     top: 4%;
-    left: 83%;
+ 
   }
 
   .back-link:hover {
@@ -154,4 +153,9 @@ h2 {
 
 ol, p {
   color: white;
+}
+
+#image-qst {
+  width: auto;
+  height: 40px;
 }
