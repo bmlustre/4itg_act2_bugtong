@@ -11,6 +11,8 @@ import questions from "../questions.json";
 import { Modal, Button } from "react-bootstrap";
 import modalStyle from "../utils/modal-style";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 class LevelStart extends Component {
 
@@ -58,7 +60,7 @@ class LevelStart extends Component {
           let passing = Math.ceil((questions.length / 2));
           let bg = fail;
           let nextLevel = this.state.currentLevel;
-            if(this.state.correctAnswer > 0 ) {
+            if(this.state.correctAnswer > passing ) {
               bg = success;
               nextLevel ++;
             }
@@ -78,6 +80,7 @@ class LevelStart extends Component {
   }
 
   correctAnswer = () =>  {
+    toast.success("Correct", {autoClose: 400,hideProgressBar: true,});
     this.setState(prevState => ({
       score : prevState +1,
       correctAnswer : prevState.correctAnswer +1,
@@ -90,6 +93,7 @@ class LevelStart extends Component {
   }
 
   wrongAnswer = () => {
+    toast.error("Wrong", {autoClose: 400,hideProgressBar: true,});
     this.setState(prevState => ({
       wrongAnswer : prevState.wrongAnswer +1,
       currentQuestionIndex : prevState.currentQuestionIndex +1,
@@ -100,12 +104,13 @@ class LevelStart extends Component {
   }
 
   closeModal = () => this.setState({ isOpen: false });
-
   render() {
     const {currentQuestion, numberofQuestions, currentQuestionIndex, isOpen, popUpBg, currentLevel, nextLevel  } = this.state;
     
     return (
       <div className="container-fluid p-5 text-center" id="levelStart">
+                <ToastContainer />
+
         <Modal show={isOpen} onClick={this.closeModal} style={modalStyle.modal}>
             <Modal.Body> { <img src={popUpBg} alt='logo-img' className='mb-2 img-fluid'/> }  </Modal.Body>
               <Modal.Footer>
@@ -115,14 +120,16 @@ class LevelStart extends Component {
               </Modal.Footer>
         </Modal>
 
-        <img src={sun} alt='logo-img' id="sun-img" />
-        <Link state={{ currentLevel, nextLevel }} to="/Start" >
-          <h1 className="back-link"> BACK </h1>
-        </Link>
+       
+        <div  className="d-flex justify-content-between">
+          <img src={sun} alt='logo-img' id="sun-img" />
+          <span><img src={logo} alt='logo-img' className='mb-2 ml-5' id="logo_game" /> </span>
+          <Link state={{ currentLevel, nextLevel }} to="/Start" >
+            <h1 className="back-link"> BACK </h1>
+          </Link>
+        </div>
 
-        <img src={logo} alt='logo-img' className='mb-2' id="logo_game" />
-        
-        <h2 id="level-num"> LEVEL {currentLevel} </h2>
+        <h2 id="level-num" > LEVEL {currentLevel} </h2>
 
         <img src={star} alt='star-img' className="star-three" />
         <img src={star} alt='star-img' className="star-four" />

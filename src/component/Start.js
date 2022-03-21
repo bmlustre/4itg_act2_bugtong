@@ -66,7 +66,7 @@ const Start = () => {
         </div>
 
         <div className="col-lg-6">
-          <div class="d-flex justify-content-end">
+          <div className="d-flex justify-content-end">
               <img src={question} alt='question-img' id="image-qst" onClick={showQ}/>
               <h1 className="ml-2 back-link" onClick={() => {window.location.href="/Home"}}> HOME </h1>            
           </div>
