@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
 import '../css/Start.css';
+import greet from '../imgfiles/greet.png';
 import logo from '../imgfiles/logo.png';
 import road from '../imgfiles/road.png';
 import roundOne from '../imgfiles/levels/roundOne.png';
@@ -8,7 +9,6 @@ import roundTwo from '../imgfiles/levels/roundTwo.png';
 import roundThree from '../imgfiles/levels/roundThree.png';
 import roundFour from '../imgfiles/levels/roundFour.png';
 import roundFive from '../imgfiles/levels/roundFive.png';
-import question from '../imgfiles/question.png';
 import { Button, Modal } from "react-bootstrap";
 import { useState } from "react";
 
@@ -37,20 +37,23 @@ const Start = () => {
     <>    
 
     <div className="container-fluid startContainer">
-
-    <Modal show={show}  >
+    <Modal show={show}>
       <Modal.Body> { 
-        <p className="text-dark">
-          Hello Kapitbahay! Inutusan ka ng nanay mo na bumili ng suka sa sari-sari store. 
+
+        <p className="text-dark" id="text-modal">
+          <img src={greet} alt='greet-img' className='greet' /><br/><br/>
+
+          Inutusan ka ng nanay mo na bumili ng suka sa sari-sari store. <br/><br/>        
           
-          Sabi ni Aling Nena, kapag nasagot mo ang limang bugtong niya, bibigyan ka niya ng libreng load kasama ng suka mo. Kapag hindi naman, ay uuwi kang luhaan.
-          Sa pag-uwi mo matapos bumili ng suka, nadaanan mo si mamang sorbetero. Tamang tama! Ang init ng panahon. Sabi niya, kapag nasagot mo ang limang bugtong niya, bibigyan ka niya ng libreng sorbetes, kahit anong flavor pa ang gusto mo! Ngunit kung hindi naman, ay uuwi kang pawisan.
+          Sabi ni Aling Nena, kapag nasagot mo ang limang bugtong niya, bibigyan ka niya ng libreng load kasama ng suka mo. Kapag hindi naman, ay uuwi kang luhaan. <br/><br/>
+          
+          Sa pag-uwi mo matapos bumili ng suka, nadaanan mo si mamang sorbetero. Tamang tama! Ang init ng panahon. Sabi niya, kapag nasagot mo ang limang bugtong niya, bibigyan ka niya ng libreng sorbetes, kahit anong flavor pa ang gusto mo! Ngunit kung hindi naman, ay uuwi kang pawisan. <br/><br/>
             
-          Katabi ng mamang sorbetero ang fishballan! Naku, parang bitin pa ang sorbetes, kaso wala ka nang pera. Sabi ni Mang Tomas, kapag nasagot mo raw ang limang bugtong niya, may limang tusok ng fishball ka! Kung hindi naman, ay uuwi kang gutom.
+          Katabi ng mamang sorbetero ang fishballan! Naku, parang bitin pa ang sorbetes, kaso wala ka nang pera. Sabi ni Mang Tomas, kapag nasagot mo raw ang limang bugtong niya, may limang tusok ng fishball ka! Kung hindi naman, ay uuwi kang gutom. <br/><br/>
             
-          Hay, nakakauhaw maglakad ‘no? May nadaanan kang panulak habang pauwi. Ito ang bukohan ni Ate Bebe. Sabi niya, kapag nasagot mo raw ang mga bugtong niya, bibigyan ka niya ng libreng buko! Ngunit kung hindi naman, ay uuwi kang uhaw.
+          Hay, nakakauhaw maglakad ‘no? May nadaanan kang panulak habang pauwi. Ito ang bukohan ni Ate Bebe. Sabi niya, kapag nasagot mo raw ang mga bugtong niya, bibigyan ka niya ng libreng buko! Ngunit kung hindi naman, ay uuwi kang uhaw. <br/><br/>
             
-          Matapos dumaan sa maraming tindahan, salamat naman, malapit ka na sa bahay niyo. Kaso wala kang pasalubong sa kapatid mo. May nadaanan kang nagtitinda ng Yakult, kaso wala ka nang natirang sukli. Sabi ni manong, kapag daw nasagot mo ang mga bugtong niya, may libreng yakult ka! Ngunit kung hindi naman, ay uuwi kang suka lang ang dala.
+          Matapos dumaan sa maraming tindahan, salamat naman, malapit ka na sa bahay niyo. Kaso wala kang pasalubong sa kapatid mo. May nadaanan kang nagtitinda ng Yakult, kaso wala ka nang natirang sukli. Sabi ni manong, kapag daw nasagot mo ang mga bugtong niya, may libreng yakult ka! Ngunit kung hindi naman, ay uuwi kang suka lang ang dala. <br/>
           
         </p>
         } 
@@ -67,7 +70,7 @@ const Start = () => {
 
         <div className="col-lg-6">
           <div className="d-flex justify-content-end">
-              <img src={question} alt='question-img' id="image-qst" onClick={showQ}/>
+              <h1 onClick={showQ} className="question"> ? </h1>
               <h1 className="ml-2 back-link" onClick={() => {window.location.href="/Home"}}> HOME </h1>            
           </div>
 

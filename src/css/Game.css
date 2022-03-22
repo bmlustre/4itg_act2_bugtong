@@ -1,10 +1,35 @@
 .btn-modal {
-    background-image: url("../imgfiles/btn_question.png");
-    background-size: 100% 100%;
-    background-color:transparent;
-    border-radius: 0;
-    border: 0.04rem solid transparent;
-    width: 220px;
-    height: 55px;
-    align: center;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+.greet {
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+}
+
+.question {
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0.15rem 0.15rem rgba(0, 0, 0, 0.374);
+    color: #326244;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 5%;
+    text-align: center;
+    
+    width: 40px;
+    height: 40px;
+}
+
+.question:hover {
+    background-color: #F7C700;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+}
+
+#text-modal {
+    text-align: justify;
 }
