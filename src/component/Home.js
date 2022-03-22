@@ -13,7 +13,9 @@ const Home = () => {
       <div className="home-container container-fluid">
       <div className="row ">
           <img src={logo} alt='logo-img' className="logo" />
-            <h1 className="play-link" onClick={() => navigate("/Start")}> - CLICK TO PLAY - </h1>
+          <Link state={{ showModal: true}} to="/Start">
+            <h1 className="play-link"> - CLICK TO PLAY - </h1>
+          </Link>
           <img src={jeep} alt='jeep-img' className="jeep" />
           <img src={star} alt='star-img' className="star-one" />
           <img src={star} alt='star-img' className="star-two" />

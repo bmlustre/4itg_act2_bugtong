@@ -16,10 +16,12 @@ const Start = () => {
   const location = useLocation();
 
   function isLinkDisabled(level) {
-    if(!(location.state) ) {
-      return "disabled-link";  
-    }else  if((level > location.state.nextLevel))
-    return "disabled-link";      
+    if((location.state) ) {
+      if (!location.state.nextLevel)
+        return "disabled-link";  
+      else if((level > location.state.nextLevel))
+      return "disabled-link"; 
+    }     
   }
 
   function getNextLevel() {
@@ -29,7 +31,16 @@ const Start = () => {
     else return 1;
   }
 
-  const [show, setShow] = useState(true);
+  function getModalStat() {
+    if(location.state) {
+      if (location.state.showModal)
+        return true;
+      else 
+        return false;
+    } return false;
+  }
+
+  const [show, setShow] = useState( getModalStat() );
   const handleShow = () => setShow(false);
   const showQ = () => setShow(true);
 
