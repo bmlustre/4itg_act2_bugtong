@@ -33,6 +33,17 @@
             "option4": "Pagong",
             "answer": "Aso"
         },
+       
+        {
+            "question": "Isang bundok hindi makita ang tuktok.",
+            "option1" : "Pwet",
+            "option2" : "Likod",
+            "option3" : "Noo",
+            "option4": "Tuhod",
+            "answer": "Noo"
+        }
+    ],
+    [
         {
             "question": "Bagama’t maliit, marunong nang umawit.",
             "option1" : "Orasan",
@@ -71,15 +82,9 @@
             "option3" : "Daan",
             "option4": "Ngipin",
             "answer": "Ngipin"
-        },
-        {
-            "question": "Isang bundok hindi makita ang tuktok.",
-            "option1" : "Pwet",
-            "option2" : "Likod",
-            "option3" : "Noo",
-            "option4": "Tuhod",
-            "answer": "Noo"
-        },
+        }
+    ],
+    [
         {
             "question": "Nang munti pa ay paruparo, nang lumaki ay latigo.",
             "option1" : "Patola",
@@ -123,32 +128,85 @@
     ],
     [
         {
-            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
-            "option1" : "Labanos",
-            "option2" : "Talong",
-            "option3" : "Ampalaya",
-            "option4": "Ube",
-            "answer": "Talong"
+            "question": "Hugis-puso, kulay ginto, anong sarap kung kagatin, malinamnam kung kainin.",
+            "option1" : "Mangga",
+            "option2" : "Saging",
+            "option3" : "Sopas",
+            "option4": "Champorado",
+            "answer": "Mangga"
+        },
+        {
+            "question": "Bahay ni Margarita, naliligid ng Sandata",
+            "option1" : "Panusok",
+            "option2" : "Panali",
+            "option3" : "Pinya",
+            "option4": "Palayok",
+            "answer": "Pinya"
+        },
+        {
+            "question": "Tatlong bundok ang tinibag, bago narating ang dagat.",
+            "option1" : "Bato",
+            "option2" : "Dagat",
+            "option3" : "Buko",
+            "option4": "Niyog",
+            "answer": "Niyog"
+        },        {
+            "question": "Hindi Linggo, hindi piyesta, naglawit ang bandera",
+            "option1" : "Dahon ng Buko",
+            "option2" : "Dahon ng Saging",
+            "option3" : "Dahon ng Gumamela",
+            "option4": "Dahon ng Manga",
+            "answer": "Dahon ng Saging"
+        },
+        {
+            "question": "Bulaklak muna ang dapat gawin, bago mo ito kanin.",
+            "option1" : "Aratiles",
+            "option2" : "Papaya",
+            "option3" : "Manga",
+            "option4": "Saging",
+            "answer": "Saging"
         }
     ],
     [
         {
-            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
-            "option1" : "Labanos",
-            "option2" : "Talong",
-            "option3" : "Ampalaya",
-            "option4": "Ube",
-            "answer": "Talong"
-        }
-    ],
-    [
+            "question": "Buto’t-balat, lumilipad.",
+            "option1" : "Ibon",
+            "option2" : "Saranggola",
+            "option3" : "Paro-paro",
+            "option4": "Eroplano",
+            "answer": "Saranggola"
+        },
         {
-            "question": "Gulay na granate ang kulay, matigas pa sa binti ni Aruray, pag nilaga ay lantang katuray",
-            "option1" : "Labanos",
-            "option2" : "Talong",
-            "option3" : "Ampalaya",
-            "option4": "Ube",
-            "answer": "Talong"
+            "question": "Kung gabi ay malapad, kung araw ay matangkad",
+            "option1" : "Langit",
+            "option2" : "Posporo",
+            "option3" : "Buwan",
+            "option4": "Banig",
+            "answer": "Banig"
+        },
+        {
+            "question": "Dala mo, dala ka, dala ka pa ng iyong dala.",
+            "option1" : "Medyas",
+            "option2" : "Sapatos",
+            "option3" : "Tsinelas",
+            "option4": "Selpon",
+            "answer": "Sapatos"
+        },
+        {
+            "question": "Nagbibigay na, sinasakal pa",
+            "option1" : "Bote",
+            "option2" : "Supot",
+            "option3" : "Istraw",
+            "option4": "Plastik",
+            "answer": "Bote"
+        },
+        {
+            "question": "Binili ko nang di nagustuhan, ginamit ko nang di ko nalalaman",
+            "option1" : "Kadiliman",
+            "option2" : "Kabaong",
+            "option3" : "Kabayo",
+            "option4": "Kutsara",
+            "answer": "Kabaong"
         }
     ]
    
